@@ -18,6 +18,12 @@ enable_swagger: true
 3. Launch LeagueClient
 4. Get port and password in **lockfile**
 ```
-https://127.0.0.1:PORT/swagger/v2/swagger.json
-https://127.0.0.1:PORT/swagger/v3/openapi.json
+LeagueClient:%PID:%PORT:%PASS:%PROTOCOL
 ```
+6. Access these URLs
+```
+https://127.0.0.1:%PORT/swagger/v2/swagger.json
+https://127.0.0.1:%PORT/swagger/v3/openapi.json
+```
+- Replace `%PORT` with your port
+- Login prompt appears, enter `riot` as username and your password
